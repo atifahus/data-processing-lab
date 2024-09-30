@@ -43,7 +43,7 @@ Resources:
     Properties:
       Handler: app.lambda_handler  # Ensure this matches your handler function
       CodeUri: app/                 # Path to your Lambda function code
-      Runtime: python3.9            # Specify the runtime
+      Runtime: python3.12          # Specify the runtime
       Role: !GetAtt LambdaExecutionRole.Arn
       Events:
         S3UploadEvent:
